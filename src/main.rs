@@ -1,7 +1,9 @@
-use bevy::{prelude::*, utils::HashSet};
+use bevy::prelude::*;
 use bevy_ecs_tilemap::prelude::*;
 use chunk_managment::ChunkManagmentPlugin;
+
 mod chunk_managment;
+mod tiles;
 
 const CHUNK_SIZE: UVec2 = UVec2 { x: 128, y: 512 };
 const RENDER_CHUNK_SIZE: UVec2 = UVec2 {
